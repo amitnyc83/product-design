@@ -1,0 +1,45 @@
+@import 'fonts.scss';
+
+$elc-font-path: "../fonts/";
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url(#{$elc-font-path}helveticaneueltstd-md.eot) format('eot'),
+       url(#{$elc-font-path}helveticaneueltstd-md.svg) format('svg'),
+       url(#{$elc-font-path}helveticaneueltstd-md.ttf) format('truetype'),
+       url(#{$elc-font-path}helveticaneueltstd-md.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Blk';
+  src: url(#{$elc-font-path}helveticaneueltstd-blk.svg) format('svg'),
+       url(#{$elc-font-path}helveticaneueltstd-blk.ttf) format('truetype'),
+       url(#{$elc-font-path}helveticaneueltstd-blk.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Italic';
+  src: url(#{$elc-font-path}helveticaneueltstd-it.eot) format('eot'),
+       url(#{$elc-font-path}helveticaneueltstd-it.svg) format('svg'),
+       url(#{$elc-font-path}helveticaneueltstd-it.ttf) format('truetype'),
+       url(#{$elc-font-path}helveticaneueltstd-it.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std Lt';
+  src: url(#{$elc-font-path}helveticaneueltstd-lt.eot) format('eot'),
+       url(#{$elc-font-path}helveticaneueltstd-lt.svg) format('svg'),
+       url(#{$elc-font-path}helveticaneueltstd-lt.ttf) format('truetype'),
+       url(#{$elc-font-path}helveticaneueltstd-lt.woff) format('woff')
+}
+
+body {
+  margin: 0;
+  font-family: $elc-font-light;
+}
+
+.mainContainer {
+  margin: 0px auto;
+  position: relative;
+  width: 100%;
+}
