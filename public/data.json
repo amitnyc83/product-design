@@ -1,0 +1,82 @@
+[{
+  "name": "Even Better Glow™ Light Reflecting Makeup Broad Spectrum SPF 15",
+  "imgURL":[
+    "https://www.clinique.com/media/export/cms/products/1200x1500/cl_sku_ZY5X39_1200x1500_0.png",
+    "https://www.clinique.com/media/export/cms/products/1200x1500/cl_prod_51043_1200x1500_0.png",
+    "https://www.clinique.com/media/export/cms/products/1200x1500/cl_prod_51043_1200x1500_1.png"
+  ],
+  "description": "Moderate-coverage foundation instantly perfects, improves evenness of skin.",
+  "More info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo diam, egestas sollicitudin tempor nec, lacinia nec elit. Morbi consectetur molestie enim ornare molestie. Sed in felis vitae velit pulvinar porttitor. Aenean sed tellus et mauris convallis aliquam. Nulla consectetur sapien lacus, ut efficitur elit volutpat vel. Quisque dolor arcu.",
+  "features": {
+    "benefits": "Glow and natural radiance, SPF",
+    "finish": "Radiant",
+    "keyIngredients": "Corlander Seed, Black Pepper, Patchouli.",
+    "coverage": "Sheer to Moderate",
+    "gauarantee": 1
+  },
+  "Ingrediants":[
+    
+  ],
+  "ratings": {
+    "averageRating": 4.0,
+    "totalAmount": 102
+  },
+  "price": "$29.00",
+  "shade": [
+    {
+      "name":"WN 04",
+      "color":"#F6DFC8"
+    },
+    {
+      "name": "CN 10 Alabaster",
+      "color":"#DAA781"
+    },
+    {
+      "name": "WN 118 Amber",
+      "color": "#935732"
+    }
+  ],
+  "category": "Makeup / Foundations"
+},
+{
+  "name": "Take The Day Off™ Makeup Remover For Lids, Lashes & Lips",
+  "imgURL":[
+    "https://www.clinique.com/media/export/cms/products/1200x1500/cl_sku_60MK01_1200x1500_0.png",
+    "https://www.clinique.com/media/export/cms/products/1200x1500/cl_prod_5380_1200x1500_0.png",
+    "https://www.clinique.com/media/export/cms/products/1200x1500/cl_prod_5380_1200x1500_1.png"
+  ],
+  "description": "Our best-selling makeup remover. Totally tugless formula whisks away makeup",
+  "More info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo diam, egestas sollicitudin tempor nec, lacinia nec elit. Morbi consectetur molestie enim ornare molestie. Sed in felis vitae velit pulvinar porttitor. Aenean sed tellus et mauris convallis aliquam. Nulla consectetur sapien lacus, ut efficitur elit volutpat vel. Quisque dolor arcu.",
+  "features": {
+    "benefits": "Glow and natural radiance, SPF",
+    "finish": "Radiant",
+    "keyIngredients": "Corlander Seed, Black Pepper",
+    "coverage": "Sheer to Moderate",
+    "gauarantee": 0,
+    "badge": [ "new"]
+  },
+  "Ingredients": [
+    "Water Aqua Eau", "Isododecane", "Isohexadecane", "Hydrogenated Polyisobutene", "Peg-4 Dilaurate", "Lauryl Methyl Gluceth-10 Hydroxypropyldimonium Chloride", "Hexylene Glycol", "Sodium Chloride", "Potassium Phosphate", "Dipotassium Phosphate", "Dipotassium Edta", "Phenoxyethanol" 
+  ],
+  "ratings": {
+    "averageRating": 4.8,
+    "totalAmount": 2055
+  },
+  "price": "$29.00",
+  "shade": [
+    {
+      "name":"WN 04",
+      "color":"#F6DFC8"
+    },
+    {
+      "name": "CN 10 Alabaster",
+      "color":"#DAA781"
+    },
+    {
+      "name": "WN 118 Amber",
+      "color": "#935732"
+    }
+  ],
+  "category": "Makeup / Foundations"
+}
+]
