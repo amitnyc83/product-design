@@ -16,6 +16,7 @@ I would like to make the following modifications to the pdp page.
 12. Create an a numerical representation that shows the number of items in your bag based off the quantity you add to the bag. You do not have to show the contents of your cart.  
 13. Deploy project to either heroku or netlify.  
 
+
  ## Original Task
 Desktop and mobile designs for a Clinique Single Product Page:
 
