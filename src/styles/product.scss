@@ -51,20 +51,17 @@
   }
   
   .product-rating {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  
-    &__stars {
-      width: 115px;
-      height: 15px;
+   
+
+    &__title {
+      font-family: $elc-font-standard;
+      margin: 0px;
+    }
+    &__description {
+      margin: 0px;
     }
   
-    &__view-all-ratings {
-      width: 25px;
-      position: relative;
-      top: -2px;
-    }
+   
   }
   
   .product-benefits,
@@ -85,15 +82,73 @@
       border-bottom: 1px solid #999999;
     }
   }
+
+  .product-rating {
+    
+
+    &__title {
+      font-family: $elc-font-standard;
+      margin: 0px;
+    }
+    &__averageRatings {
+      margin: 0px;
+    }
+    &__totalRatingsTitle {
+      font-family: $elc-font-standard;
+      margin: 0px;
+    }
+    &__totalRatings {
+      margin: 0px;
+    } 
+    &__view-all-ratings {
+      width: 20px;
+      position: relative;
+      top: 2px;
+    }
+  }
   
   .detail-description-style {
     margin: 20px 0px 20px 0px;
   }
+
+
+  .product-ingredients  {
+    box-sizing: border-box;
+    border: 2px solid #e6e6e6;
+    padding: 5px 5px 5px 2px;
+    margin: 0;
+
+    &__title {
+      padding: 10px;
+      cursor: pointer;
+      position: relative;
+    } 
+
+    &__indicator {
+      // width: 20px;
+      // position: relative;
+      // top: 2px;
+      font-size: 20px;
+      right: 30px;
+      top: 24px;
+    }
+    
+  }
+
+  .product_ingredient__title:hover {
+    background-color: #eee;
+  }
+
   
   .product-shade {
     box-sizing: border-box;
     border: 2px solid #e6e6e6;
-    padding: 21px 20px 15px 20px;
+    padding: 20px 20px 15px 0px;
+
+    &__title {
+      font-family: $elc-font-standard;
+      margin: 0px;
+    }
   
     &__shade-name {
       font-family: $elc-font-standard;
@@ -103,6 +158,14 @@
       float: right;
       width: 16px;
       height: 16px;
+    }
+
+    &__indicator {
+      font-size: 30px;
+    }
+
+    &__body {
+      font-family: $elc-font-standard;
     }
   }
   
@@ -218,15 +281,19 @@
   
     .product-benefits,
     .product-finish,
+    .product-rating,
     .product-coverage,
     .product-key-ingredients {
       min-width: 290px; 
     }
   
     .product-benefits-finish,
+    .product-rating-container,
     .product-coverage-description {
       display: flex;
     }
+
+   
   
     .product-shade {
       width: 276px;
