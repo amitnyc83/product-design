@@ -1,4 +1,4 @@
- {
+ [{
   "gauarantee": {
    "title": "Best Makeup Guarantee",
    "text": "If you're not satisfied for any reason with your first purchase of Makeup, we’ll make it right by issuing a refund (for one item) or allowing you to exchange the product for something of equal value."
@@ -11,5 +11,5 @@
    "text": "Take 20% off",
    "color": "#9b2f29"
  }
-}
+}]
  
