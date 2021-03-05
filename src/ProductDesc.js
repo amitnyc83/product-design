@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Accordion from './Accordion';
+import { Modal } from './Modal';
 import caret from './images/caret.png';
+import { ReactComponent as VeganIcon } from './images/green-leaf-vegan-icon-by-Vexels.svg'
 
-export const ProductDesc = ({ category, name, description, ratings, features, shade, ingredients }) => {
-  
-  
+export const ProductDesc = ({ category, name, description, ratings, moreInfo, features, shade, ingredients }) => {
+  const [show, setShow] = useState(false);
+  const openModal = () => setShow(true);
+  const closeModal = () => setShow(false);
+
   return (
   <section className="product-details">
     <h4 className="product-category">{category}</h4>
-    <h2 className="product-name">{name}</h2>
-    <p className="product-description">{description}</p>
+    <h2 className="product-name">{name}
+     {(() => {
+       if (features.keyIngredients.includes('vegan')) {
+         return <VeganIcon className="vegan-icon-style" /> 
+       }
+     })()}
+     </h2> 
+    <p className="product-description">{description} {" "}
+    {!show && <button className="product-description__button" onClick={openModal}> More Info</button>}
+    <Modal closeModal={closeModal} show={show} moreInfo={moreInfo}/>
+    </p>
      <div className="product-rating-container">
      <div className="product-rating detail-description-style">
        <h4 className="product-rating__title">Average Rating</h4>
@@ -50,6 +63,9 @@ export const ProductDesc = ({ category, name, description, ratings, features, sh
     {(() => {
       if (ingredients.length > 0) {
         return <Accordion productIngredients={ingredients}/>
+      }
+      if (features.gauarantee === 1) {
+        return <Accordion productGuarantee={features.gauarantee} />
       }
     })()}
     <section className="product-shade">
