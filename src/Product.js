@@ -22,10 +22,8 @@ export const Product = () => {
     })
     .then(function(productData) {
       setData(productData)
-    
     }); 
   }
-  
   
   useEffect(() => {
     getData()
@@ -37,13 +35,20 @@ export const Product = () => {
     return (
       <div key={idx}>
       <div className ="product-image">
-        <ProductImage image={product.imgURL} />
+      {(() => {
+      if (Object.keys(product.features).includes("badge")) {
+        return <ProductImage images={product.imgURL} badge={product.features.badge}/>
+      } else {
+         return <ProductImage images={product.imgURL} />
+      }
+      })()}
       </div>
       <div className="product-details">
         <ProductDesc 
         category={product.category}
         name={product.name}
         description={product.description}
+        moreInfo={product["More info"]}
         ratings={product.ratings} 
         features={product.features} 
         ingredients={product.Ingredients}
