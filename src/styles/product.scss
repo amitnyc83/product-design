@@ -13,12 +13,30 @@
   .product-figure {
     &__image {
       width: 340px;
-      height: 424px;
+      height: 340px;
+      margin: 0 0 150px 0;
       position: relative;
+      display: block;
       top: 144px;
       left: -40px;
     }
+
+    &__thumb-bar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0 0 0;
+
+      img {
+        width: 85px;
+        height: 90px;
+        margin: 30px 0 0 0;
+      }
+    }
   }
+
+  
   
   .product-category {
     position: absolute;
@@ -35,10 +53,70 @@
     letter-spacing: 0.02em;
     font-family: $elc-font-standard;
   }
+
+  .vegan-icon-style {
+    padding: 5px 0px 0px 5px;
+    width: 24px;
+    height: 24px;
+  }
   
   .product-description {
     width: 340px;
     letter-spacing: 0.02em;
+
+    &__button {
+      border: none;
+      padding: 0;
+      background: none;
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid #999999;
+    }
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000003a;
+    transition: opacity 0.2s ease;
+  }
+
+  .modal {
+    width: 500px;
+    position: relative;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    transform: translateY(100%);
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 8px 3px;
+    font-family: $elc-font-standard;
+  }
+
+  .modal button {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #0000003a;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.562);
   }
   
   .product-details {
@@ -112,25 +190,37 @@
   }
 
 
-  .product-ingredients  {
+  .product-ingredients,
+  .product-guarantee  {
     box-sizing: border-box;
     border: 2px solid #e6e6e6;
     padding: 5px 5px 5px 2px;
-    margin: 0;
+    margin: 0px;
 
     &__title {
-      padding: 10px;
+      font-family: $elc-font-standard;
+      margin: 0px;
+      padding: 0px;
       cursor: pointer;
       position: relative;
     } 
 
     &__indicator {
-      // width: 20px;
-      // position: relative;
-      // top: 2px;
-      font-size: 20px;
-      right: 30px;
-      top: 24px;
+      width: 20px;
+      display: flex;
+      color: #666;
+      float: right;
+      // font-size: 20px;
+      // right: 30px;
+      // top: 24px;
+    }
+
+    &__list {
+      margin: 0px;
+    } 
+
+    &__text {
+      margin: 0px;
     }
     
   }
@@ -181,13 +271,13 @@
       position: relative;
       margin-right: 10px;
       width: 20px;
-      top: 5px;
+      border: none;
     }
   
     &__increase-quantity {
       width: 20px;
       position: relative;
-      top: 5px;
+      border: none;
     }
   }
   
@@ -233,16 +323,39 @@
       width: 1304px;
       margin: 0 auto;
       display: flex;
+      justify-content: space-between;
+      flex-direction: row;
       font-size: 17px;
       line-height: 24px;
     }
   
     .product-figure {
       &__image {
-        width: 576px;
-        height: 720px;
+        width: 400px;
+        height: 450px;
         position: relative;
         top: 184px;
+        text-align: center;
+      }
+
+      &__new-item {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      &__thumb-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 0 0 0;
+  
+        img {
+          width: 100px;
+          height: 100px;
+          margin: 30px 0 0 0;
+        }
       }
     }
   
