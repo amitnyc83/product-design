@@ -44,8 +44,8 @@ export default function Accordion({ productIngredients, productGuarantee}) {
         </div>
         {isOpen && (
           <div className="product-ingredients__list">
-            {productIngredients.map((ingredients) => {
-              return <li>{ingredients}</li>;
+            {productIngredients.map((ingredients, idx) => {
+              return <li key={idx}>{ingredients}</li>;
             })}
             <p>
               Note: Please be aware that ingredient lists may change or vary

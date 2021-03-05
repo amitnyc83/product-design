@@ -9,7 +9,7 @@ import burger from './images/burger.png';
 import './styles/menu.scss';
 
 export const Menu = () => {
-  const count = useContext(QuantityContext);
+  let count = useContext(QuantityContext);
 
   return (
     <nav className="elc-nav">
