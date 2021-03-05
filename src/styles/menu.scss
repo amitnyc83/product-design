@@ -20,6 +20,7 @@
   &__shop,
   &__shop-open,
   &__bag,
+  &__count,
   &__burger,
   &__search,
   &__cliniqueiD,
@@ -95,6 +96,13 @@
     bottom: 22.79%;
   }
 
+  &__count {
+    left: 91.50%;
+    right: 29.24%;
+    top: 61.65%;
+    bottom: 20.65%;
+  }
+
   &__search {
     left: 93.25%;
     right: 4.91%;
@@ -143,6 +151,13 @@
       right: 27.37%;
       top: 31.94%;
       bottom: 34.72%;
+    }
+
+    &__count {
+      left: 72.50%;
+      right: 29.24%;
+      top: 36.65%;
+      bottom: 20.65%;
     }
   }
 }
